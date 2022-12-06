@@ -25,6 +25,7 @@ const server = http.createServer((req, res) => {
                     (err, content) => {
                                     
                                     if (err) throw err;
+                                    res.setHeader("Access-Control-Allow-Origin", "*")
                                     res.writeHead(200, { 'Content-Type': 'text/html' });
                                     res.end(content);
                         }
@@ -40,6 +41,7 @@ const server = http.createServer((req, res) => {
                     (err, content) => {
                                     
                                     if (err) throw err;
+                                    res.setHeader("Access-Control-Allow-Origin", "*")
                                     res.writeHead(200, { 'Content-Type': 'text/html' });
                                     res.end(content);
                         }
@@ -52,6 +54,7 @@ const server = http.createServer((req, res) => {
                     (err, content) => {
                                     
                                     if (err) throw err;
+                                    res.setHeader("Access-Control-Allow-Origin", "*")
                                     // Please note the content-type here is application/json
                                     res.writeHead(200, { 'Content-Type': 'application/json' });
                                     res.end(content);
